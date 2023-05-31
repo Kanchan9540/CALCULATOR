@@ -1,0 +1,86 @@
+/* here I don't want a default margine and padding so within a star tag we writr margine and padding 0 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+
+/* here we style the container class */
+.container{
+             height: 100vh;  
+             display: flex;
+             justify-content: center;
+             align-items: center;
+
+}
+
+/* here we style the calculator class */
+.calculator{
+              background-color: #ecf0f3;
+              padding: 15px;
+              border-radius: 30px;
+              box-shadow: inset 5px 5px 12px #ffffff ,
+                                5px 5px 12px rgba(0,0,0,.16);
+               display: grid; 
+               grid-template-columns: repeat(4 , 68px);    /* it divide the grid into 4 equal parts and give spaces as 68px. */            
+}
+
+/* here we styl;e the input buttons */
+input{
+    grid-column: span 4;  /* we give the 43 colom in single row */
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff ,
+                inset -5px -5px 18px rgba(0,0,0,.16) ;  
+    border: none; 
+    border-radius: 30px;  
+    color: rgb(70, 70, 70); 
+    font-size: 50px; 
+    text-align: end; 
+    margin: auto;
+    margin-top: 40px;  
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/* here we design the button section */
+button{
+        height: 48px;
+        width: 48px;
+        background-color: #ecf0f3;
+        box-shadow: -5px -5px 12px #ffffff , 
+                     5px 5px 12px rgba(0,0,0,.16);
+        border: none;
+        border-radius: 50px;  
+        margin: 8px;  
+        font-size: 16px;  
+             
+}
+button:active{
+    box-shadow: inset -5px -5px 12px #ffffff , 
+    inset 8px 8px 15px 18px rgba(0,0,0,.16);
+}
+
+/* here we style the equal button section */
+.equal{
+        width: 115px;
+        border-radius: 40px;
+        background-color: #ecf0f3;
+        box-shadow: -5px -5px 12px #ffffff , 
+                     5px 5px 12px rgba(0,0,0,.16);
+
+
+}
+
+/* here we do the responsive so here we addd the media screen 
+@media screen and (max-width: 480px){
+    .container{
+        align-items: flex-end;
+        background-color: #ecf0f3;
+        text-align: center;
+    }  
+}  */
